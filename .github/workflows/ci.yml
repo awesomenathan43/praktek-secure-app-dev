@@ -50,7 +50,7 @@ jobs:
           tar -xzf "$RUNNER_TEMP/gitleaks.tar.gz" -C "$RUNNER_TEMP" gitleaks
           echo "$RUNNER_TEMP" >> "$GITHUB_PATH"
       - name: Scan secret di source code
-        run: gitleaks dir . --redact --verbosexx
+        run: gitleaks dir . --redact --verbose
   # >>> TAHAP B: tambahkan job dependency-scan
 
   # >>> TAHAP C: tambahkan job sast

@@ -1,7 +1,7 @@
 const minimist = require('minimist');
 const config = require('./config');
 const { createApp } = require('./app');
-require('.env.example').config();
+require('.env').config();
 
 // Contoh: node src/server.js --port 8080
 const args = minimist(process.argv.slice(2));

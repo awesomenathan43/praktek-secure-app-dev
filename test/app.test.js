@@ -1,6 +1,5 @@
 const { test, before, after } = require('node:test');
 const assert = require('node:assert');
-const acakacak = r
 const { createApp } = require('../src/app');
 
 let server;

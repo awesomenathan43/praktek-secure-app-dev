@@ -1,3 +1,4 @@
+require('dotenv').config();
 // ============================================================
 //  PERINGATAN: aplikasi ini SENGAJA dibuat rentan untuk praktikum.
 //  Jangan gunakan kode ini (atau pola di dalamnya) di production.
@@ -8,10 +9,10 @@ module.exports = {
   port: process.env.PORT || 3000,
 
   // Secret untuk menandatangani JWT
-  jwtSecret: 'kX9mQ2vLp4RtY8wZ3nB6cD1fH7jS5aE0',
+  jwtSecret: process.env.jwkSecret,
 
   // API key payment gateway (palsu)
-  paymentGatewayApiKey: 'spk_live_9f8e7d6c5b4a3928170e6f5d4c3b2a19',
+  paymentGatewayApiKey: process.env.paymentGetwayApiKey,
 
   // Pengaturan default aplikasi
   defaultSettings: {

@@ -9,7 +9,7 @@ module.exports = {
   port: process.env.PORT || 3000,
 
   // Secret untuk menandatangani JWT
-  jwtSecret: process.env.example.jwtSecret,
+  jwtSecret: process.env.jwtSecret,
 
   // API key payment gateway (palsu)
   paymentGatewayApiKey: process.env.paymentGetwayApiKey,
